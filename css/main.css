@@ -1,0 +1,75 @@
+body{
+              margin:0;
+              padding:0;
+              background:aqua;
+          }
+        #div1{
+            width:120px;
+            height:300px;
+            position:absolute;
+            background-color:#d4d4d4;
+            top:50%;
+            left:50%;
+            border-left:20px solid ;
+            transform:translate(-50%,-50%);
+            perspective:1000px;
+        }
+        
+       div#demo{
+            width:120px;
+            position:absolute;
+            left:2px;
+            top:0px;
+            height:100%;
+            border-left:4px dotted #fff;
+            background-color:blue;
+            transform:rotateY(0deg);
+            perspective-origin:left;
+            transform-style:preserve-3d;
+            transform-origin:left;
+            backface-visibility:visible;
+           animation:slide 6s ease-in infinite;
+        }
+         @keyframes slide{
+            0%{transform:rotateY(0deg)}
+            100%{transform:rotateY(-180deg);}
+        }
+        figure{
+            width:100%;
+            position:absolute;
+            height:100%;
+            top:0;
+            margin:0;
+        }
+        figure>p{
+            position:absolute;
+            padding:10px;
+            font-size:12px;
+            line-height:20px;
+            color:#f52;
+            margin:0;
+        }
+        figure#back{
+            background-color:#fff;
+            box-shadow:12px 8px 105px green inset;
+            transform:rotateY(-180deg)
+    }
+    #demo>h1{
+            padding:-10px;
+            font-size:17px;
+            margin-top:60px;
+            line-height:40px;
+            color:#fff;
+            text-align:center;
+            text-shadow:3px 1px 1px blue;
+        }
+        div>h3{
+            padding:30px;
+            font-size:20px;
+            line-height:40px;
+            text-align:center;
+            text-transform:uppercase;
+            color:#000000;
+            margin-top:10px;
+            text-shadow:3px 1px 1px maroon;
+        }
